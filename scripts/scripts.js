@@ -55,6 +55,8 @@ function calculate(event) {
         case '/':
             res = parseInt(n1) / parseInt(n2);
         break;
+        case '^':
+            res = parseInt(n1) ** parseInt(n2)
         default:
         
         break;
