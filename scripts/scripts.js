@@ -57,12 +57,14 @@ function calculate(event) {
         break;
         case '^':
             res = parseInt(n1) ** parseInt(n2)
+        break;
         default:
-        
         break;
       }
-  }
-  
+    } else if(n1 !== "" && n2 === "" && operator === "raiz") {
+            res = parseInt(n1) ** (1/2)
+    }
+
   document.getElementById('display').innerHTML = "" +  res;
   n1 = "" + res
   n2 = ""
