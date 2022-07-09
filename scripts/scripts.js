@@ -61,10 +61,8 @@ function calculate(event) {
         
         break;
       }
-  } else if (n1 !== "" && operator === "^" && n2 === "" ) { // para calcular exponenciação.
-        res = parseInt(n1) ** 2
   }
-
+  
   document.getElementById('display').innerHTML = "" +  res;
   n1 = "" + res
   n2 = ""
